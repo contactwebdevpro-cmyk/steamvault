@@ -1371,6 +1371,37 @@ function typeCmd() {
 // Délai pour laisser le layout se stabiliser avant l'animation
 setTimeout(typeCmd, 200);
 </script>
+
+   <!-- 1. Charger Shield.js -->
+<script src="shield.js"></script>
+ 
+<!-- 2. Protéger le formulaire -->
+<script>
+  Shield.protect("#contact-form", {
+ 
+    // Appelé si bloqué (reason = "rate_limit" | "bot_detected" | "honeypot" | ...)
+    onBlock(reason) {
+      console.warn("Soumission bloquée :", reason);
+    },
+ 
+    // Appelé si tout est OK — juste avant le submit
+    onPass(form) {
+      console.log("Shield : OK ✓");
+    },
+ 
+    // Optionnel : remplace le submit natif (ex. fetch AJAX)
+    async submitHandler(form) {
+      const data = new FormData(form);
+      const res = await Shield.safeFetch("/api/contact", {
+        method: "POST",
+        body: data,
+      });
+      if (res.ok) alert("Message envoyé !");
+      else        alert("Erreur serveur.");
+    },
+  });
+</script>
+
 </body>
 </html>
 
