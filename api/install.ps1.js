@@ -14,8 +14,8 @@ $ErrorActionPreference = "Stop"
 
 $APP_NAME    = "SteamVault"
 $VERSION     = "2.0.0"
-$GITHUB_REPO = "https://github.com/contactwebdevpro-cmyk/steamvault/releases/tag/SteamVault"   # <- remplace par ton repo
-$RELEASE_URL = "https://github.com/$GITHUB_REPO/releases/latest/download/SteamVault.exe"
+$RELEASE_URL = "https://github.com/contactwebdevpro-cmyk/steamvault/releases/latest/download/SteamVault.exe"
+$RELEASE_URL = "https://github.com/contactwebdevpro-cmyk/steamvault/releases/download/SteamVault/SteamVault.exe"
 $DESKTOP     = [Environment]::GetFolderPath("Desktop")
 $DEST        = Join-Path $DESKTOP "SteamVault.exe"
 
