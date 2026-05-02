@@ -344,7 +344,7 @@
             <div class="_sh_check" id="_sh_c3"><span class="_sh_ci">○</span>Challenge de sécurité (PoW)</div>
             <div class="_sh_check" id="_sh_c4"><span class="_sh_ci">○</span>Validation finale</div>
           </div>
-          <div class="_sh_footer">Protégé par <b>Shield.js</b></div>
+          <div class="_sh_footer">Protégé par <b>Shield Vault</b></div>
         </div>
       `;
       return d;
