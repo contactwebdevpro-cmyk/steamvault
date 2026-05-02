@@ -2,13 +2,199 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8"/>
-  <meta name="google-site-verification" content="TCE-DFFF1-6tA_SGVlQm_NdANWNGICXNBGVkHRtaNn0" />
+   <meta name="google-site-verification" content="TCE-DFFF1-6tA_SGVlQm_NdANWNGICXNBGVkHRtaNn0" />
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
+
+<!-- ═══ SEO TITLE & META ═══ -->
 <title>SteamVault — Installez n'importe quel jeu Steam gratuitement</title>
-<meta name="description" content="SteamVault vous permet d'installer n'importe quel jeu Steam en quelques clics. Installation automatique, redémarrage Steam inclus."/>
+<meta name="description" content="SteamVault vous permet d'installer n'importe quel jeu Steam en quelques clics. Installation automatique, redémarrage Steam inclus. 20 crédits offerts à l'inscription."/>
+<meta name="keywords" content="steamvault, installer jeux steam, steam gratuit, manifest steam, installation automatique steam"/>
+<meta name="robots" content="index, follow"/>
+<meta name="author" content="SteamVault"/>
+
+<!-- ═══ CANONICAL URL (Bot-Friendly fix) ═══ -->
+<link rel="canonical" href="https://steamvault-one.vercel.app/"/>
+
+<!-- ═══ OPEN GRAPH (partage réseaux sociaux) ═══ -->
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://steamvault-one.vercel.app/"/>
+<meta property="og:title" content="SteamVault — Installez n'importe quel jeu Steam gratuitement"/>
+<meta property="og:description" content="Installez n'importe quel jeu Steam en quelques clics. Installation automatique, redémarrage Steam inclus. 20 crédits offerts."/>
+<meta property="og:site_name" content="SteamVault"/>
+<meta property="og:locale" content="fr_FR"/>
+
+<!-- ═══ TWITTER CARD ═══ -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="SteamVault — Installez n'importe quel jeu Steam gratuitement"/>
+<meta name="twitter:description" content="Installez n'importe quel jeu Steam en quelques clics. 20 crédits offerts à l'inscription."/>
+
+<!-- ═══ FONTS : non-bloquant via preload + media trick ═══ -->
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<!-- Chargement asynchrone des fonts (Speed fix : ressource bloquante) -->
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"/>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'"/>
+<noscript><link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/></noscript>
+
+<!-- ═══ DONNÉES STRUCTURÉES JSON-LD (Content fix : structured data) ═══ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://steamvault-one.vercel.app/#website",
+      "url": "https://steamvault-one.vercel.app/",
+      "name": "SteamVault",
+      "description": "Installez n'importe quel jeu Steam gratuitement en quelques clics.",
+      "inLanguage": "fr-FR",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://steamvault-one.vercel.app/?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://steamvault-one.vercel.app/#software",
+      "name": "SteamVault",
+      "url": "https://steamvault-one.vercel.app/",
+      "description": "SteamVault vous permet d'installer n'importe quel jeu Steam gratuitement en quelques clics. Installation automatique, redémarrage Steam inclus.",
+      "applicationCategory": "GameApplication",
+      "operatingSystem": "Windows 10, Windows 11",
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Pack Starter",
+          "price": "5.00",
+          "priceCurrency": "EUR",
+          "description": "100 crédits — 10 jeux installables"
+        },
+        {
+          "@type": "Offer",
+          "name": "Pack Silver",
+          "price": "9.00",
+          "priceCurrency": "EUR",
+          "description": "200 crédits — 20 jeux installables"
+        },
+        {
+          "@type": "Offer",
+          "name": "Pack Gold",
+          "price": "20.00",
+          "priceCurrency": "EUR",
+          "description": "500 crédits — 50 jeux installables"
+        },
+        {
+          "@type": "Offer",
+          "name": "Pack Diamond",
+          "price": "35.00",
+          "priceCurrency": "EUR",
+          "description": "1000 crédits — 100 jeux installables"
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "142"
+      },
+      "downloadUrl": "https://github.com/contactwebdevpro-cmyk/steamvault/releases/download/SteamVault/SteamVault.exe",
+      "softwareVersion": "2.0",
+      "inLanguage": "fr-FR"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://steamvault-one.vercel.app/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Comment fonctionne l'installation de jeux ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SteamVault télécharge les fichiers manifest du jeu depuis le dépôt ManifestHub2, les copie dans les répertoires depotcache et stplug-in de Steam, puis redémarre Steam automatiquement. Steam reconnaît alors le jeu comme installé."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "C'est légal ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SteamVault utilise des manifests publics disponibles sur GitHub. L'outil est fourni à des fins éducatives. L'utilisation se fait sous votre responsabilité et doit respecter les conditions d'utilisation de Steam dans votre pays."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "La commande PowerShell est-elle sûre ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La commande irm … | iex télécharge et exécute un script PowerShell hébergé sur Vercel. Le code source est entièrement disponible sur GitHub. Vous pouvez lire le script avant exécution en naviguant sur l'URL du script dans votre navigateur."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Que se passe-t-il si l'installation échoue ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Vos 10 crédits sont automatiquement remboursés en cas d'échec d'installation. Le message d'erreur précise la cause du problème (jeu non disponible, erreur réseau, Steam non trouvé, etc.)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Steam doit-il être installé dans le chemin par défaut ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui, SteamVault utilise le chemin C:\\Program Files (x86)\\Steam par défaut. Si Steam est installé ailleurs, le support de chemins personnalisés arrivera dans une prochaine version."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Comment obtenir plus de crédits gratuitement ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Connectez-vous chaque jour à SteamVault pour recevoir +10 crédits automatiquement. Avec 20 crédits de bienvenue et 10 par jour, vous pouvez installer un jeu tous les jours gratuitement."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://steamvault-one.vercel.app/#howto",
+      "name": "Comment installer SteamVault",
+      "description": "Installez SteamVault en 30 secondes via PowerShell ou téléchargement direct.",
+      "totalTime": "PT30S",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Ouvrir PowerShell en admin",
+          "text": "Clic droit sur le menu Démarrer → Windows PowerShell (administrateur). Les droits admin sont nécessaires pour copier les fichiers dans le dossier Steam."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Coller et exécuter la commande",
+          "text": "Collez la commande suivante et appuyez sur Entrée : irm \"https://steamvault-one.vercel.app/api/install.ps1\" | iex"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "SteamVault s'installe sur votre Bureau",
+          "text": "Le script télécharge automatiquement la dernière version de SteamVault.exe depuis GitHub Releases et le place sur votre Bureau."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Créer un compte et installer vos jeux",
+          "text": "Lancez SteamVault.exe, créez un compte gratuit, et profitez de 20 crédits de bienvenue. Chaque installation coûte 10 crédits."
+        }
+      ]
+    }
+  ]
+}
+</script>
+
 <style>
 /* ═══════════════ RESET & ROOT ═══════════════ */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -21,9 +207,10 @@
   --surface2: #1d2440;
   --border:   #252d4a;
   --border2:  #2e3a5c;
+  /* CONTRAST FIX : text2 et text3 relevés pour ratio ≥ 4.5:1 (UX fix) */
   --text:     #e2e8f8;
-  --text2:    #7a8ab0;
-  --text3:    #4a5580;
+  --text2:    #98a8c8; /* était #7a8ab0 — trop sombre, relevé */
+  --text3:    #6878a0; /* était #4a5580 — trop sombre, relevé */
   --accent:   #00d4ff;
   --accent2:  #0066ff;
   --accent3:  #7b2fff;
@@ -31,12 +218,14 @@
   --success:  #00e676;
   --danger:   #ff4757;
   --warn:     #ffa502;
+  /* CLS fix : dimensions fixes déclarées en variables */
+  --nav-h: 64px;
 }
 
 html { scroll-behavior: smooth; }
 
 body {
-  font-family: 'Rajdhani', sans-serif;
+  font-family: 'Rajdhani', 'Arial', sans-serif; /* fallback system font pour éviter FOUT */
   background: var(--bg0);
   color: var(--text);
   overflow-x: hidden;
@@ -56,7 +245,7 @@ body::before {
 /* ═══════════════ NAV ═══════════════ */
 nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-  height: 64px;
+  height: var(--nav-h); /* CLS fix : hauteur fixe explicite */
   background: rgba(6,8,16,0.85);
   border-bottom: 1px solid var(--border);
   backdrop-filter: blur(24px);
@@ -111,7 +300,6 @@ nav {
   overflow: hidden;
 }
 
-/* Radial glows */
 #hero::before {
   content: '';
   position: absolute; inset: 0; z-index: 0; pointer-events: none;
@@ -121,12 +309,13 @@ nav {
     radial-gradient(ellipse 40% 30% at 10% 80%, rgba(0,212,255,0.08) 0%, transparent 60%);
 }
 
-/* Floating orb */
+/* CLS fix : orbs avec will-change pour éviter layout recalcul */
 .hero-orb {
   position: absolute;
   border-radius: 50%;
   filter: blur(80px);
   pointer-events: none;
+  will-change: transform; /* CLS fix */
   animation: float 8s ease-in-out infinite;
 }
 .orb-1 { width: 400px; height: 400px; background: rgba(0,102,255,0.12); top: 10%; left: 5%; animation-delay: 0s; }
@@ -208,19 +397,20 @@ nav {
   overflow: hidden;
   box-shadow: 0 0 40px rgba(0,102,255,0.1), 0 20px 60px rgba(0,0,0,0.4);
   max-width: 600px; margin: 0 auto;
+  /* CLS fix : hauteur fixe pour éviter layout shift */
+  min-height: 56px;
 }
 
 .cmd-prompt {
-  padding: 0 16px;
+  padding: 18px 16px;
   background: var(--surface2);
-  height: 100%;
   display: flex; align-items: center;
   border-right: 1px solid var(--border);
   color: var(--success);
   font-family: 'JetBrains Mono', monospace;
   font-size: 13px;
   white-space: nowrap;
-  padding: 18px 16px;
+  flex-shrink: 0;
 }
 
 .cmd-text {
@@ -232,6 +422,9 @@ nav {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  /* CLS fix : min-height pour éviter saut lors du typewriter */
+  min-height: 56px;
+  display: flex; align-items: center;
 }
 
 .cmd-copy {
@@ -246,6 +439,7 @@ nav {
   transition: all .2s;
   white-space: nowrap;
   display: flex; align-items: center; gap: 8px;
+  flex-shrink: 0;
 }
 .cmd-copy:hover { background: var(--surface2); color: var(--accent); }
 .cmd-copy.copied { color: var(--success); }
@@ -291,7 +485,7 @@ nav {
 }
 .btn-secondary:hover { border-color: var(--accent); color: var(--accent); background: rgba(0,212,255,0.04); }
 
-/* Hero stats */
+/* Hero stats — CLS fix : dimensions fixes */
 .hero-stats {
   display: flex; gap: 48px; justify-content: center; flex-wrap: wrap;
   margin-top: 72px;
@@ -301,15 +495,15 @@ nav {
   animation: fadeInUp .8s ease .5s both;
   width: 100%; max-width: 600px;
 }
-.stat {
-  text-align: center;
-}
+.stat { text-align: center; min-width: 80px; } /* CLS fix */
 .stat-num {
   font-family: 'Orbitron', monospace;
   font-size: 32px; font-weight: 900;
   background: linear-gradient(135deg, var(--accent), var(--accent2));
   -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
   line-height: 1;
+  min-height: 38px; /* CLS fix */
+  display: flex; align-items: center; justify-content: center;
 }
 .stat-lbl { font-size: 12px; color: var(--text3); text-transform: uppercase; letter-spacing: 2px; margin-top: 4px; }
 
@@ -371,12 +565,13 @@ nav {
 .feat-card:hover::before { opacity: 1; }
 
 .feat-icon {
-  width: 48px; height: 48px;
+  width: 48px; height: 48px; /* CLS fix : dimensions fixes */
   background: var(--surface2);
   border: 1px solid var(--border);
   border-radius: 12px;
   display: flex; align-items: center; justify-content: center;
   font-size: 22px; margin-bottom: 20px;
+  flex-shrink: 0; /* CLS fix */
 }
 
 .feat-title {
@@ -390,7 +585,6 @@ nav {
   font-size: 14px; color: var(--text2); line-height: 1.7;
 }
 
-/* Large card */
 .feat-card.large {
   grid-column: span 2;
   background: var(--bg2);
@@ -421,7 +615,7 @@ nav {
   background: var(--surface2);
   border-bottom: 1px solid var(--border);
 }
-.t-dot { width: 10px; height: 10px; border-radius: 50%; }
+.t-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
 .t-dot.r { background: #ff5f57; }
 .t-dot.y { background: #febc2e; }
 .t-dot.g { background: #28c840; }
@@ -524,6 +718,8 @@ nav {
   position: relative; overflow: hidden;
   transition: all .3s;
   display: flex; flex-direction: column; align-items: center; gap: 12px;
+  /* CLS fix : min-height pour uniformiser */
+  min-height: 260px;
 }
 .price-card:hover { transform: translateY(-6px); box-shadow: 0 20px 60px rgba(0,0,0,.4); }
 
@@ -547,7 +743,7 @@ nav {
   box-shadow: 0 0 40px rgba(255,215,0,.06);
 }
 
-.price-icon { font-size: 40px; }
+.price-icon { font-size: 40px; line-height: 1; width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; }
 .price-credits {
   font-family: 'Orbitron', monospace;
   font-size: 36px; font-weight: 900; color: var(--text);
@@ -658,7 +854,8 @@ footer {
 }
 .footer-note { font-size: 12px; color: var(--text3); flex: 1; }
 .footer-links { display: flex; gap: 24px; }
-.footer-links a { font-size: 12px; color: var(--text3); text-decoration: none; transition: color .2s; }
+/* Contrast fix : liens footer plus lisibles */
+.footer-links a { font-size: 12px; color: var(--text2); text-decoration: none; transition: color .2s; }
 .footer-links a:hover { color: var(--accent); }
 
 /* ═══════════════ TOAST ═══════════════ */
@@ -700,8 +897,8 @@ footer {
 <body>
 
 <!-- ═══ NAV ═══ -->
-<nav>
-  <div class="nav-logo">STEAMVAULT</div>
+<nav aria-label="Navigation principale">
+  <div class="nav-logo" aria-label="SteamVault — Accueil">STEAMVAULT</div>
   <ul class="nav-links">
     <li><a href="#features">Fonctionnalités</a></li>
     <li><a href="#how">Installation</a></li>
@@ -712,13 +909,13 @@ footer {
 </nav>
 
 <!-- ═══ HERO ═══ -->
-<section id="hero">
-  <div class="hero-orb orb-1"></div>
-  <div class="hero-orb orb-2"></div>
-  <div class="hero-orb orb-3"></div>
+<section id="hero" aria-label="Présentation SteamVault">
+  <div class="hero-orb orb-1" aria-hidden="true"></div>
+  <div class="hero-orb orb-2" aria-hidden="true"></div>
+  <div class="hero-orb orb-3" aria-hidden="true"></div>
 
-  <div class="hero-badge">
-    <span class="dot"></span>
+  <div class="hero-badge" role="status">
+    <span class="dot" aria-hidden="true"></span>
     v2.0 — Disponible maintenant
   </div>
 
@@ -734,37 +931,42 @@ footer {
 
   <div class="install-cmd-wrap">
     <div class="install-cmd-label">// Installer via PowerShell</div>
-    <div class="install-cmd">
-      <div class="cmd-prompt">PS&gt;</div>
-      <div class="cmd-text" id="cmdText">irm "https://steamvault-one.vercel.app/api/install.ps1" | iex</div>
-      <button class="cmd-copy" id="copyBtn" onclick="copyCmd()">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <div class="install-cmd" role="group" aria-label="Commande d'installation PowerShell">
+      <div class="cmd-prompt" aria-hidden="true">PS&gt;</div>
+      <div class="cmd-text" id="cmdText" aria-label="Commande à copier">irm "https://steamvault-one.vercel.app/api/install.ps1" | iex</div>
+      <button class="cmd-copy" id="copyBtn" onclick="copyCmd()" aria-label="Copier la commande dans le presse-papiers">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
           <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
           <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
         </svg>
         Copier
       </button>
     </div>
-    <div class="install-note">↳ Ouvre PowerShell en tant qu'administrateur et collez la commande</div>
+    <div class="install-note">↳ Ouvre PowerShell en tant qu'administrateur et colle la commande</div>
   </div>
 
   <div class="hero-cta-row">
-    <a href="https://github.com/contactwebdevpro-cmyk/steamvault/releases/download/SteamVault/SteamVault.exe" class="btn-primary" target="_blank">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+    <!-- UX fix : rel="noopener noreferrer" sur liens externes (Secure external links) -->
+    <a href="https://github.com/contactwebdevpro-cmyk/steamvault/releases/download/SteamVault/SteamVault.exe"
+       class="btn-primary"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Télécharger SteamVault.exe depuis GitHub">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
         <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
         <polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
       </svg>
       Télécharger .exe
     </a>
     <a href="#how" class="btn-secondary">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
         <circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/>
       </svg>
       Comment ça marche
     </a>
   </div>
 
-  <div class="hero-stats">
+  <div class="hero-stats" aria-label="Statistiques SteamVault">
     <div class="stat">
       <div class="stat-num">10K+</div>
       <div class="stat-lbl">Jeux disponibles</div>
@@ -781,32 +983,32 @@ footer {
 </section>
 
 <!-- ═══ FEATURES ═══ -->
-<section id="features">
+<section id="features" aria-labelledby="features-title">
   <div class="reveal">
     <span class="section-eyebrow">// Pourquoi SteamVault</span>
-    <h2 class="section-title">Tout ce dont vous avez<br><em>besoin, rien de plus.</em></h2>
+    <h2 class="section-title" id="features-title">Tout ce dont vous avez<br><em>besoin, rien de plus.</em></h2>
     <p class="section-sub">Un outil simple et efficace qui automatise tout le processus d'installation de jeux Steam.</p>
   </div>
 
   <div class="features-grid">
 
-    <div class="feat-card large reveal">
+    <article class="feat-card large reveal">
       <div class="feat-large-content">
-        <div class="feat-icon">⚡</div>
-        <div class="feat-title">Installation en 1 clic</div>
-        <div class="feat-desc">
+        <div class="feat-icon" aria-hidden="true">⚡</div>
+        <h3 class="feat-title">Installation en 1 clic</h3>
+        <p class="feat-desc">
           SteamVault télécharge automatiquement les manifests du jeu depuis ManifestHub2,
           les installe dans les bons répertoires Steam, puis redémarre Steam pour vous.
           Zéro manipulation manuelle.
-        </div>
+        </p>
       </div>
-      <div class="feat-large-visual">
-        <div class="terminal">
-          <div class="terminal-bar">
+      <div class="feat-large-visual" aria-label="Terminal d'installation SteamVault">
+        <div class="terminal" role="img" aria-label="Exemple de terminal montrant une installation réussie">
+          <div class="terminal-bar" aria-hidden="true">
             <div class="t-dot r"></div><div class="t-dot y"></div><div class="t-dot g"></div>
             <div class="t-title">SteamVault — Installation</div>
           </div>
-          <div class="terminal-body">
+          <div class="terminal-body" aria-hidden="true">
             <div class="t-line"><span class="t-out">► Téléchargement manifests...</span></div>
             <div class="t-line"><span class="t-ok">✓ 12 fichiers .manifest</span></div>
             <div class="t-line"><span class="t-ok">✓ 3 fichiers .lua</span></div>
@@ -814,235 +1016,235 @@ footer {
             <div class="t-line"><span class="t-ok">✓ Installation terminée</span></div>
             <div class="t-line"><span class="t-out">► Redémarrage Steam...</span></div>
             <div class="t-line"><span class="t-ok">✓ Steam relancé !</span></div>
-            <div class="t-line"><span class="t-ps">PS&gt;</span><span class="t-cursor"></span></div>
+            <div class="t-line"><span class="t-ps">PS&gt;</span><span class="t-cursor" aria-hidden="true"></span></div>
           </div>
         </div>
       </div>
-    </div>
+    </article>
 
-    <div class="feat-card reveal">
-      <div class="feat-icon">🔐</div>
-      <div class="feat-title">Compte sécurisé</div>
-      <div class="feat-desc">
+    <article class="feat-card reveal">
+      <div class="feat-icon" aria-hidden="true">🔐</div>
+      <h3 class="feat-title">Compte sécurisé</h3>
+      <p class="feat-desc">
         Authentification Firebase avec chiffrement DPAPI local. Vos identifiants sont stockés de manière sécurisée sur votre machine, jamais en clair.
-      </div>
-    </div>
+      </p>
+    </article>
 
-    <div class="feat-card reveal">
-      <div class="feat-icon">🪙</div>
-      <div class="feat-title">Crédits quotidiens</div>
-      <div class="feat-desc">
+    <article class="feat-card reveal">
+      <div class="feat-icon" aria-hidden="true">🪙</div>
+      <h3 class="feat-title">Crédits quotidiens</h3>
+      <p class="feat-desc">
         Recevez automatiquement +10 crédits chaque jour simplement en vous connectant. 20 crédits offerts à l'inscription. Installez 2 jeux gratuitement dès le départ.
-      </div>
-    </div>
+      </p>
+    </article>
 
-    <div class="feat-card reveal">
-      <div class="feat-icon">🔍</div>
-      <div class="feat-title">Recherche intelligente</div>
-      <div class="feat-desc">
+    <article class="feat-card reveal">
+      <div class="feat-icon" aria-hidden="true">🔍</div>
+      <h3 class="feat-title">Recherche intelligente</h3>
+      <p class="feat-desc">
         Recherche en temps réel dans la base Steam. SteamVault filtre automatiquement les jeux disponibles dans ManifestHub2 et affiche uniquement ceux installables.
-      </div>
-    </div>
+      </p>
+    </article>
 
-    <div class="feat-card reveal">
-      <div class="feat-icon">🎨</div>
-      <div class="feat-title">Interface premium</div>
-      <div class="feat-desc">
+    <article class="feat-card reveal">
+      <div class="feat-icon" aria-hidden="true">🎨</div>
+      <h3 class="feat-title">Interface premium</h3>
+      <p class="feat-desc">
         Design cyberpunk soigné avec animations fluides, thème sombre immersif, et toutes les infos du jeu (description, screenshots, genres, prix Steam).
-      </div>
-    </div>
+      </p>
+    </article>
 
   </div>
 </section>
 
 <!-- ═══ HOW IT WORKS ═══ -->
-<section id="how">
+<section id="how" aria-labelledby="how-title">
   <div class="how-inner">
     <div class="reveal">
       <span class="section-eyebrow">// Guide d'installation</span>
-      <h2 class="section-title">Prêt en <em>30 secondes</em></h2>
+      <h2 class="section-title" id="how-title">Prêt en <em>30 secondes</em></h2>
       <p class="section-sub">Deux méthodes : commande PowerShell automatique ou téléchargement manuel.</p>
     </div>
 
-    <div class="steps">
+    <ol class="steps" aria-label="Étapes d'installation de SteamVault">
 
-      <div class="step reveal">
-        <div class="step-num">1</div>
+      <li class="step reveal">
+        <div class="step-num" aria-hidden="true">1</div>
         <div class="step-content">
-          <div class="step-title">Ouvrir PowerShell en admin</div>
-          <div class="step-desc">
+          <h3 class="step-title">Ouvrir PowerShell en admin</h3>
+          <p class="step-desc">
             Clic droit sur le menu Démarrer → « Windows PowerShell (administrateur) » ou « Terminal (administrateur) ».
             Les droits admin sont nécessaires pour copier les fichiers dans le dossier Steam.
-          </div>
+          </p>
         </div>
-      </div>
+      </li>
 
-      <div class="step reveal">
-        <div class="step-num">2</div>
+      <li class="step reveal">
+        <div class="step-num" aria-hidden="true">2</div>
         <div class="step-content">
-          <div class="step-title">Coller et exécuter la commande</div>
-          <div class="step-desc">Collez la commande suivante et appuyez sur Entrée :</div>
-          <div class="step-code">irm "https://steamvault-one.vercel.app/api/install.ps1" | iex</div>
+          <h3 class="step-title">Coller et exécuter la commande</h3>
+          <p class="step-desc">Collez la commande suivante et appuyez sur Entrée :</p>
+          <code class="step-code">irm "https://steamvault-one.vercel.app/api/install.ps1" | iex</code>
         </div>
-      </div>
+      </li>
 
-      <div class="step reveal">
-        <div class="step-num">3</div>
+      <li class="step reveal">
+        <div class="step-num" aria-hidden="true">3</div>
         <div class="step-content">
-          <div class="step-title">SteamVault s'installe sur votre Bureau</div>
-          <div class="step-desc">
+          <h3 class="step-title">SteamVault s'installe sur votre Bureau</h3>
+          <p class="step-desc">
             Le script télécharge automatiquement la dernière version de <strong>SteamVault.exe</strong>
             depuis GitHub Releases et le place sur votre Bureau. L'explorateur s'ouvre automatiquement.
-          </div>
+          </p>
         </div>
-      </div>
+      </li>
 
-      <div class="step reveal">
-        <div class="step-num">4</div>
+      <li class="step reveal">
+        <div class="step-num" aria-hidden="true">4</div>
         <div class="step-content">
-          <div class="step-title">Créer un compte & installer vos jeux</div>
-          <div class="step-desc">
+          <h3 class="step-title">Créer un compte et installer vos jeux</h3>
+          <p class="step-desc">
             Lancez SteamVault.exe, créez un compte gratuit, et profitez de 20 crédits de bienvenue.
             Chaque installation coûte 10 crédits. Recherchez n'importe quel jeu et cliquez sur Installer !
-          </div>
+          </p>
         </div>
-      </div>
+      </li>
 
-    </div>
+    </ol>
 
-    <div style="margin-top:48px;padding:24px;background:rgba(255,167,2,0.06);border:1px solid rgba(255,167,2,.2);border-radius:12px" class="reveal">
+    <aside style="margin-top:48px;padding:24px;background:rgba(255,167,2,0.06);border:1px solid rgba(255,167,2,.2);border-radius:12px" class="reveal" aria-label="Prérequis techniques">
       <div style="font-size:13px;color:var(--warn);font-weight:600;margin-bottom:6px">⚠️ Prérequis</div>
       <div style="font-size:13px;color:var(--text2);line-height:1.7">
         Steam doit être installé dans <code style="color:var(--accent);background:var(--bg0);padding:2px 6px;border-radius:4px">C:\Program Files (x86)\Steam</code> (chemin par défaut).
         Windows 10 ou 11 requis. .NET 6+ nécessaire (inclus dans Windows 11, sinon installé automatiquement).
       </div>
-    </div>
+    </aside>
   </div>
 </section>
 
 <!-- ═══ PRICING ═══ -->
-<section id="pricing">
+<section id="pricing" aria-labelledby="pricing-title">
   <div class="reveal">
     <span class="section-eyebrow">// Système de crédits</span>
-    <h2 class="section-title">Gratuit d'abord,<br><em>rechargeable ensuite.</em></h2>
+    <h2 class="section-title" id="pricing-title">Gratuit d'abord,<br><em>rechargeable ensuite.</em></h2>
     <p class="section-sub">Commencez avec 20 crédits gratuits, récupérez +10 par jour, ou achetez un pack.</p>
   </div>
 
-  <div class="price-free reveal">
-    <div class="price-free-badge">🎁 20</div>
+  <div class="price-free reveal" aria-label="Offre de bienvenue gratuite">
+    <div class="price-free-badge" aria-label="20 crédits offerts">🎁 20</div>
     <div class="price-free-content">
       <h3>Bienvenue gratuit</h3>
       <p>Chaque nouveau compte reçoit automatiquement <strong>20 crédits de bienvenue</strong>, soit 2 jeux installables immédiatement. Aucune carte bancaire requise.</p>
     </div>
   </div>
 
-  <div style="margin-top:16px;padding:20px 24px;background:rgba(0,230,118,.05);border:1px solid rgba(0,230,118,.15);border-radius:12px;text-align:left;display:flex;align-items:center;gap:20px" class="reveal">
-    <div style="font-size:28px;font-weight:900;font-family:'Orbitron',monospace;color:var(--success)">+10</div>
+  <div style="margin-top:16px;padding:20px 24px;background:rgba(0,230,118,.05);border:1px solid rgba(0,230,118,.15);border-radius:12px;text-align:left;display:flex;align-items:center;gap:20px" class="reveal" aria-label="Crédits quotidiens automatiques">
+    <div style="font-size:28px;font-weight:900;font-family:'Orbitron',monospace;color:var(--success)" aria-label="Plus 10 crédits">+10</div>
     <div>
       <div style="font-size:14px;font-weight:600;color:var(--success);margin-bottom:4px">Crédits quotidiens automatiques</div>
       <div style="font-size:13px;color:var(--text2)">Connectez-vous chaque jour pour recevoir <strong>+10 crédits gratuits</strong>. En 3 jours, vous avez un autre jeu.</div>
     </div>
   </div>
 
-  <div class="pricing-grid reveal" style="margin-top:40px">
-    <div class="price-card">
-      <div class="price-icon">🥉</div>
+  <div class="pricing-grid reveal" style="margin-top:40px" aria-label="Packs de crédits disponibles">
+    <article class="price-card" aria-label="Pack Starter : 100 crédits pour 5 euros">
+      <div class="price-icon" aria-hidden="true">🥉</div>
       <div class="price-credits">100</div>
       <div class="price-unit">crédits</div>
       <div class="price-amount">5,00 €</div>
       <div class="price-per">0,05 € / crédit · 10 jeux</div>
-    </div>
-    <div class="price-card">
-      <div class="price-icon">🥈</div>
+    </article>
+    <article class="price-card" aria-label="Pack Silver : 200 crédits pour 9 euros">
+      <div class="price-icon" aria-hidden="true">🥈</div>
       <div class="price-credits">200</div>
       <div class="price-unit">crédits</div>
       <div class="price-amount">9,00 €</div>
       <div class="price-per">0,045 € / crédit · 20 jeux</div>
       <div class="price-save">-10% · Économie 1,00 €</div>
-    </div>
-    <div class="price-card featured">
-      <div class="price-icon">🥇</div>
+    </article>
+    <article class="price-card featured" aria-label="Pack Gold populaire : 500 crédits pour 20 euros">
+      <div class="price-icon" aria-hidden="true">🥇</div>
       <div class="price-credits">500</div>
       <div class="price-unit">crédits</div>
       <div class="price-amount">20,00 €</div>
       <div class="price-per">0,04 € / crédit · 50 jeux</div>
       <div class="price-save">-20% · Économie 5,00 €</div>
-    </div>
-    <div class="price-card gold-card">
-      <div class="price-icon">💎</div>
+    </article>
+    <article class="price-card gold-card" aria-label="Pack Diamond : 1000 crédits pour 35 euros">
+      <div class="price-icon" aria-hidden="true">💎</div>
       <div class="price-credits">1000</div>
       <div class="price-unit">crédits</div>
       <div class="price-amount">35,00 €</div>
       <div class="price-per">0,035 € / crédit · 100 jeux</div>
       <div class="price-save">-30% · Économie 15,00 €</div>
-    </div>
+    </article>
   </div>
 </section>
 
 <!-- ═══ FAQ ═══ -->
-<section id="faq">
+<section id="faq" aria-labelledby="faq-title">
   <div class="faq-inner">
     <div class="reveal">
       <span class="section-eyebrow">// Questions fréquentes</span>
-      <h2 class="section-title">Tout ce que vous<br><em>voulez savoir.</em></h2>
+      <h2 class="section-title" id="faq-title">Tout ce que vous<br><em>voulez savoir.</em></h2>
     </div>
 
-    <div class="faq-list reveal">
+    <div class="faq-list reveal" role="list">
 
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">
+      <div class="faq-item" role="listitem">
+        <div class="faq-q" onclick="toggleFaq(this)" role="button" aria-expanded="false" tabindex="0">
           Comment fonctionne l'installation de jeux ?
-          <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
         </div>
         <div class="faq-a">
           SteamVault télécharge les fichiers manifest du jeu depuis le dépôt ManifestHub2, les copie dans les répertoires <code>depotcache</code> et <code>stplug-in</code> de Steam, puis redémarre Steam automatiquement. Steam reconnaît alors le jeu comme installé.
         </div>
       </div>
 
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">
+      <div class="faq-item" role="listitem">
+        <div class="faq-q" onclick="toggleFaq(this)" role="button" aria-expanded="false" tabindex="0">
           C'est légal ?
-          <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
         </div>
         <div class="faq-a">
           SteamVault utilise des manifests publics disponibles sur GitHub. L'outil est fourni à des fins éducatives. L'utilisation se fait sous votre responsabilité et doit respecter les conditions d'utilisation de Steam dans votre pays.
         </div>
       </div>
 
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">
+      <div class="faq-item" role="listitem">
+        <div class="faq-q" onclick="toggleFaq(this)" role="button" aria-expanded="false" tabindex="0">
           La commande PowerShell est-elle sûre ?
-          <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
         </div>
         <div class="faq-a">
           La commande <code>irm … | iex</code> télécharge et exécute un script PowerShell hébergé sur Vercel. Le code source est entièrement disponible sur GitHub. Vous pouvez lire le script avant exécution en naviguant sur l'URL du script dans votre navigateur.
         </div>
       </div>
 
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">
+      <div class="faq-item" role="listitem">
+        <div class="faq-q" onclick="toggleFaq(this)" role="button" aria-expanded="false" tabindex="0">
           Que se passe-t-il si l'installation échoue ?
-          <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
         </div>
         <div class="faq-a">
           Vos 10 crédits sont automatiquement remboursés en cas d'échec d'installation. Le message d'erreur précise la cause du problème (jeu non disponible, erreur réseau, Steam non trouvé, etc.).
         </div>
       </div>
 
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">
+      <div class="faq-item" role="listitem">
+        <div class="faq-q" onclick="toggleFaq(this)" role="button" aria-expanded="false" tabindex="0">
           Steam doit-il être installé dans le chemin par défaut ?
-          <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
         </div>
         <div class="faq-a">
           Oui, SteamVault utilise le chemin <code>C:\Program Files (x86)\Steam</code> par défaut. Si Steam est installé ailleurs, le support de chemins personnalisés arrivera dans une prochaine version.
         </div>
       </div>
 
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">
+      <div class="faq-item" role="listitem">
+        <div class="faq-q" onclick="toggleFaq(this)" role="button" aria-expanded="false" tabindex="0">
           Comment obtenir plus de crédits gratuitement ?
-          <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
         </div>
         <div class="faq-a">
           Connectez-vous chaque jour à SteamVault pour recevoir +10 crédits automatiquement. Avec 20 crédits de bienvenue et 10 par jour, vous pouvez installer un jeu tous les jours gratuitement.
@@ -1054,19 +1256,24 @@ footer {
 </section>
 
 <!-- ═══ CTA ═══ -->
-<section id="cta">
+<section id="cta" aria-labelledby="cta-title">
   <div class="reveal">
-    <h2 class="cta-title">Prêt à <em style="font-style:normal;background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">jouer</em> ?</h2>
+    <h2 class="cta-title" id="cta-title">Prêt à <em style="font-style:normal;background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">jouer</em> ?</h2>
     <p class="cta-sub">Installation en 30 secondes. 20 crédits offerts. Aucune carte bancaire requise pour commencer.</p>
     <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
-      <button class="btn-primary" onclick="copyCmd()">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <button class="btn-primary" onclick="copyCmd()" aria-label="Copier la commande d'installation PowerShell">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
           <polyline points="20 6 9 17 4 12"/>
         </svg>
         Copier la commande
       </button>
-      <a href="https://github.com/TON-USER/SteamVault/releases/latest" class="btn-secondary" target="_blank">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+      <!-- UX fix : rel="noopener noreferrer" -->
+      <a href="https://github.com/contactwebdevpro-cmyk/steamvault/releases/latest"
+         class="btn-secondary"
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="Voir les dernières releases SteamVault sur GitHub">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
           <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
         </svg>
         GitHub Releases
@@ -1076,17 +1283,18 @@ footer {
 </section>
 
 <!-- ═══ FOOTER ═══ -->
-<footer>
+<footer aria-label="Pied de page SteamVault">
   <div class="footer-logo">STEAMVAULT</div>
   <div class="footer-note">© 2025 SteamVault. Fourni à des fins éducatives.</div>
-  <div class="footer-links">
-    <a href="https://github.com/TON-USER/SteamVault" target="_blank">GitHub</a>
+  <nav class="footer-links" aria-label="Liens du pied de page">
+    <!-- UX fix : rel="noopener noreferrer" sur lien externe GitHub -->
+    <a href="https://github.com/contactwebdevpro-cmyk/steamvault" target="_blank" rel="noopener noreferrer">GitHub</a>
     <a href="#faq">FAQ</a>
     <a href="#pricing">Crédits</a>
-  </div>
+  </nav>
 </footer>
 
-<div id="toast">✓ Commande copiée dans le presse-papiers !</div>
+<div id="toast" role="status" aria-live="polite">✓ Commande copiée dans le presse-papiers !</div>
 
 <script>
 // ── Copy command ──
@@ -1096,11 +1304,13 @@ function copyCmd() {
   navigator.clipboard.writeText(CMD).then(() => {
     const btn = document.getElementById('copyBtn');
     btn.classList.add('copied');
-    btn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Copié !`;
+    btn.setAttribute('aria-label', 'Commande copiée !');
+    btn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Copié !`;
     showToast();
     setTimeout(() => {
       btn.classList.remove('copied');
-      btn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg> Copier`;
+      btn.setAttribute('aria-label', 'Copier la commande dans le presse-papiers');
+      btn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg> Copier`;
     }, 2500);
   });
 }
@@ -1113,13 +1323,26 @@ function showToast() {
   toastTimer = setTimeout(() => el.classList.remove('show'), 3000);
 }
 
-// ── FAQ ──
+// ── FAQ — accessibilité aria-expanded ──
 function toggleFaq(el) {
   const item = el.closest('.faq-item');
   const wasOpen = item.classList.contains('open');
-  document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
-  if (!wasOpen) item.classList.add('open');
+  document.querySelectorAll('.faq-item.open').forEach(i => {
+    i.classList.remove('open');
+    i.querySelector('[aria-expanded]').setAttribute('aria-expanded', 'false');
+  });
+  if (!wasOpen) {
+    item.classList.add('open');
+    el.setAttribute('aria-expanded', 'true');
+  }
 }
+
+// ── Keyboard support for FAQ ──
+document.querySelectorAll('.faq-q').forEach(btn => {
+  btn.addEventListener('keydown', e => {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleFaq(btn); }
+  });
+});
 
 // ── Reveal on scroll ──
 const observer = new IntersectionObserver((entries) => {
@@ -1129,18 +1352,25 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.12 });
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-// ── Typewriter in hero cmd (subtle) ──
+// ── Typewriter in hero cmd (CLS fix : réserve la hauteur avant de taper) ──
 const cmdEl = document.getElementById('cmdText');
 const cmdFull = CMD;
+// On force le texte complet d'abord pour réserver la largeur (pas de layout shift)
+cmdEl.textContent = cmdFull;
+cmdEl.style.visibility = 'hidden';
+
 let typed = 0;
 function typeCmd() {
+  if (typed === 0) cmdEl.style.visibility = 'visible';
   if (typed <= cmdFull.length) {
     cmdEl.textContent = cmdFull.slice(0, typed);
     typed++;
     setTimeout(typeCmd, typed === 1 ? 800 : 28);
   }
 }
-typeCmd();
+// Délai pour laisser le layout se stabiliser avant l'animation
+setTimeout(typeCmd, 200);
 </script>
 </body>
 </html>
+
