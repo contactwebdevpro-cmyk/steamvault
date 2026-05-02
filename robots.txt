@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+
+# Bloquer les endpoints API si inutile pour SEO
+Disallow: /api/
+
+# Autoriser les assets
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.svg$
+Allow: /*.webp$
+
+# Sitemap
+Sitemap: https://steamvault-one.vercel.app/sitemap.xml
