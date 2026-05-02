@@ -539,16 +539,14 @@
   /* ─────────────────────────────────────────
      DÉCLENCHEMENT AUTOMATIQUE DE LA GATEWAY
   ───────────────────────────────────────── */
-  if (CFG.gatewayEnabled) {
+ if (CFG.gatewayEnabled) {
     if (Gateway.hasValidPass()) {
       log("Gateway : pass valide, accès direct");
     } else {
-      if (document.readyState === "loading") {
-        document.addEventListener("DOMContentLoaded", () => Gateway.run());
-      } else {
-        Gateway.run();
-      }
+      // Lance immédiatement, peu importe l'état du DOM
+      Gateway.run();
     }
+  }
   }
 
   log("Chargé — PoW :", CFG.powDifficulty, "| Gateway :", CFG.gatewayEnabled);
