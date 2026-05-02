@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "routes": [
+    { "src": "/api/install.ps1", "dest": "/api/install.ps1.js" },
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
+}
