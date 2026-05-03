@@ -6,29 +6,39 @@
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 
 <!-- ═══ SEO TITLE & META ═══ -->
-<title>Depovex — crack jeu steam</title>
-<meta name="description" content="Depovex, le logiciel de crack le plus puissant."/>
-<meta name="keywords" content="depovex, crack, gratuit, free, download, telecharger gratuit, jeu steam gratuit, "/>
+<title>Depovex — Installer des Jeux Steam Gratuitement en 1 Clic</title>
+<meta name="description" content="Depovex est le logiciel qui vous permet d'installer n'importe quel jeu Steam gratuitement en quelques clics. Installation automatique, 20 crédits offerts à l'inscription."/>
+<meta name="keywords" content="depovex, crack, gratuit, free, download, telecharger gratuit, jeu steam gratuit, installer jeux steam"/>
 <meta name="robots" content="index, follow"/>
 <meta name="author" content="Depovex"/>
 
-<!-- ═══ CANONICAL URL (Bot-Friendly fix) ═══ -->
+<!-- ═══ APPLE TOUCH ICON ═══ -->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
+
+<!-- ═══ CANONICAL URL ═══ -->
 <link rel="canonical" href="https://steamvault-one.vercel.app/"/>
 
-<!-- ═══ OPEN GRAPH (partage réseaux sociaux) ═══ -->
+<!-- ═══ OPEN GRAPH ═══ -->
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="https://steamvault-one.vercel.app/"/>
-<meta property="og:title" content="Depovex — Installez n'importe quel jeu Steam gratuitement"/>
-<meta property="og:description" content="Installez n'importe quel jeu Steam en quelques clics. Installation automatique, redémarrage Steam inclus. 20 crédits offerts."/>
+<meta property="og:title" content="Depovex — Installer des Jeux Steam Gratuitement en 1 Clic"/>
+<meta property="og:description" content="Installez n'importe quel jeu Steam en quelques clics. Installation automatique, redémarrage Steam inclus. 20 crédits offerts à l'inscription."/>
+<meta property="og:image" content="https://steamvault-one.vercel.app/og-image.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
 <meta property="og:site_name" content="Depovex"/>
 <meta property="og:locale" content="fr_FR"/>
 
 <!-- ═══ TWITTER CARD ═══ -->
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="Depovex — Installez n'importe quel jeu Steam gratuitement"/>
+<meta name="twitter:site" content="@depovex"/>
+<meta name="twitter:title" content="Depovex — Installer des Jeux Steam Gratuitement en 1 Clic"/>
 <meta name="twitter:description" content="Installez n'importe quel jeu Steam en quelques clics. 20 crédits offerts à l'inscription."/>
+<meta name="twitter:image" content="https://steamvault-one.vercel.app/og-image.png"/>
 
-<!-- ═══ FONTS : non-bloquant via preload + media trick ═══ -->
+<!-- ═══ FONTS ═══ -->
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"/>
@@ -343,10 +353,10 @@ nav {
 
 .hero-title {
   font-family: 'Orbitron', monospace;
-  font-size: clamp(56px, 10vw, 110px);
+  font-size: clamp(48px, 9vw, 100px);
   font-weight: 900;
-  line-height: .9;
-  letter-spacing: -2px;
+  line-height: .95;
+  letter-spacing: -1px;
   position: relative; z-index: 1;
   animation: fadeInDown .8s ease .1s both;
 }
@@ -500,6 +510,54 @@ nav {
 
 @keyframes fadeInDown { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes fadeInUp   { from { opacity: 0; transform: translateY(20px);  } to { opacity: 1; transform: translateY(0); } }
+
+/* ═══════════════ SOCIAL SHARE ═══════════════ */
+.social-share {
+  display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 28px;
+  position: relative; z-index: 1;
+  animation: fadeInUp .8s ease .55s both;
+}
+.social-share-label {
+  font-size: 11px; color: var(--text3);
+  text-transform: uppercase; letter-spacing: 2px;
+  font-family: 'JetBrains Mono', monospace;
+}
+.social-btn {
+  display: inline-flex; align-items: center; gap: 7px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 12px; font-weight: 600;
+  text-decoration: none; cursor: pointer;
+  transition: all .2s; border: 1px solid transparent;
+  font-family: 'Rajdhani', sans-serif;
+  letter-spacing: .5px;
+}
+.social-btn.twitter {
+  background: rgba(29,161,242,0.1);
+  border-color: rgba(29,161,242,0.3);
+  color: #1da1f2;
+}
+.social-btn.twitter:hover { background: rgba(29,161,242,0.2); transform: translateY(-1px); }
+.social-btn.reddit {
+  background: rgba(255,69,0,0.1);
+  border-color: rgba(255,69,0,0.3);
+  color: #ff4500;
+}
+.social-btn.reddit:hover { background: rgba(255,69,0,0.2); transform: translateY(-1px); }
+.social-btn.discord {
+  background: rgba(88,101,242,0.1);
+  border-color: rgba(88,101,242,0.3);
+  color: #5865f2;
+}
+.social-btn.discord:hover { background: rgba(88,101,242,0.2); transform: translateY(-1px); }
+.social-btn.copy-link {
+  background: rgba(0,212,255,0.08);
+  border-color: rgba(0,212,255,0.25);
+  color: var(--accent);
+}
+.social-btn.copy-link:hover { background: rgba(0,212,255,0.15); transform: translateY(-1px); }
 
 /* ═══════════════ FEATURES ═══════════════ */
 #features {
@@ -876,6 +934,7 @@ footer {
   #features, #how, #pricing, #faq, #cta { padding: 80px 20px; }
   footer { padding: 28px 20px; flex-direction: column; text-align: center; }
   .hero-stats { gap: 32px; }
+  .social-share { gap: 8px; }
 }
 </style>
 </head>
@@ -883,14 +942,15 @@ footer {
 
 <!-- ═══ NAV ═══ -->
 <nav aria-label="Navigation principale">
-  <div class="nav-logo" aria-label="Depovex — Accueil">DEPOVEX</div>
+  <a href="/" class="nav-logo" aria-label="Depovex — Accueil">DEPOVEX</a>
   <ul class="nav-links">
     <li><a href="#features">Fonctionnalités</a></li>
-    <li><a href="#how">Installation</a></li>
-    <li><a href="#pricing">Crédits</a></li>
+    <li><a href="#how">Guide d'installation</a></li>
+    <li><a href="#pricing">Crédits &amp; tarifs</a></li>
     <li><a href="#faq">FAQ</a></li>
+    <li><a href="https://github.com/contactwebdevpro-cmyk/steamvault" target="_blank" rel="noopener noreferrer">GitHub</a></li>
   </ul>
-  <a href="#cta" class="nav-cta">Télécharger</a>
+  <a href="#cta" class="nav-cta">Télécharger Depovex</a>
 </nav>
 
 <!-- ═══ HERO ═══ -->
@@ -904,9 +964,10 @@ footer {
     v2.0 — Disponible maintenant
   </div>
 
+  <!-- H1 étendu pour le SEO (min 20 caractères) -->
   <h1 class="hero-title">
-    <span class="line1">DEPO</span>
-    <span class="line2">VEX</span>
+    <span class="line1">Installer des Jeux Steam</span>
+    <span class="line2">Gratuitement avec Depovex</span>
   </h1>
 
   <p class="hero-sub">
@@ -950,6 +1011,29 @@ footer {
     </a>
   </div>
 
+  <!-- ═══ SOCIAL SHARE ═══ -->
+  <div class="social-share" aria-label="Partager Depovex">
+    <span class="social-share-label">Partager :</span>
+    <a href="https://twitter.com/intent/tweet?text=Installer+des+jeux+Steam+gratuitement+avec+Depovex+%F0%9F%8E%AE&url=https%3A%2F%2Fsteamvault-one.vercel.app%2F"
+       target="_blank" rel="noopener noreferrer"
+       class="social-btn twitter"
+       aria-label="Partager Depovex sur Twitter / X">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+      Twitter / X
+    </a>
+    <a href="https://www.reddit.com/submit?url=https%3A%2F%2Fsteamvault-one.vercel.app%2F&title=Depovex+%E2%80%94+Installer+des+jeux+Steam+gratuitement"
+       target="_blank" rel="noopener noreferrer"
+       class="social-btn reddit"
+       aria-label="Partager Depovex sur Reddit">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg>
+      Reddit
+    </a>
+    <button class="social-btn copy-link" onclick="copyPageLink()" aria-label="Copier le lien de la page">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+      Copier le lien
+    </button>
+  </div>
+
   <div class="hero-stats" aria-label="Statistiques Depovex">
     <div class="stat">
       <div class="stat-num">10K+</div>
@@ -971,7 +1055,7 @@ footer {
   <div class="reveal">
     <span class="section-eyebrow">// Pourquoi Depovex</span>
     <h2 class="section-title" id="features-title">Tout ce dont vous avez<br><em>besoin, rien de plus.</em></h2>
-    <p class="section-sub">Un outil simple et efficace qui automatise tout le processus d'installation de jeux Steam.</p>
+    <p class="section-sub">Un outil simple et efficace qui automatise tout le processus d'<a href="#how" style="color:var(--accent);text-decoration:none">installation de jeux Steam</a> gratuitement.</p>
   </div>
 
   <div class="features-grid">
@@ -983,7 +1067,7 @@ footer {
         <p class="feat-desc">
           Depovex télécharge automatiquement les manifests du jeu depuis ManifestHub2,
           les installe dans les bons répertoires Steam, puis redémarre Steam pour vous.
-          Zéro manipulation manuelle.
+          Zéro manipulation manuelle. <a href="#how" style="color:var(--accent);text-decoration:none">Voir le guide d'installation →</a>
         </p>
       </div>
       <div class="feat-large-visual" aria-label="Terminal d'installation Depovex">
@@ -1018,7 +1102,7 @@ footer {
       <div class="feat-icon" aria-hidden="true">🪙</div>
       <h3 class="feat-title">Crédits quotidiens</h3>
       <p class="feat-desc">
-        Recevez automatiquement +10 crédits chaque jour simplement en vous connectant. 20 crédits offerts à l'inscription. Installez 2 jeux gratuitement dès le départ.
+        Recevez automatiquement +10 crédits chaque jour simplement en vous connectant. 20 crédits offerts à l'inscription. <a href="#pricing" style="color:var(--accent);text-decoration:none">Voir les tarifs →</a>
       </p>
     </article>
 
@@ -1034,7 +1118,7 @@ footer {
       <div class="feat-icon" aria-hidden="true">🎨</div>
       <h3 class="feat-title">Interface premium</h3>
       <p class="feat-desc">
-        Design cyberpunk soigné avec animations fluides, thème sombre immersif, et toutes les infos du jeu (description, screenshots, genres, prix Steam).
+        Design cyberpunk soigné avec animations fluides, thème sombre immersif, et toutes les infos du jeu (description, screenshots, genres, prix Steam). <a href="#faq" style="color:var(--accent);text-decoration:none">Questions fréquentes →</a>
       </p>
     </article>
 
@@ -1047,7 +1131,7 @@ footer {
     <div class="reveal">
       <span class="section-eyebrow">// Guide d'installation</span>
       <h2 class="section-title" id="how-title">Prêt en <em>30 secondes</em></h2>
-      <p class="section-sub">Deux méthodes : commande PowerShell automatique ou téléchargement manuel.</p>
+      <p class="section-sub">Deux méthodes : commande PowerShell automatique ou <a href="https://github.com/contactwebdevpro-cmyk/steamvault/releases/latest" target="_blank" rel="noopener noreferrer" style="color:var(--accent);text-decoration:none">téléchargement manuel sur GitHub</a>.</p>
     </div>
 
     <ol class="steps" aria-label="Étapes d'installation de Depovex">
@@ -1086,10 +1170,11 @@ footer {
       <li class="step reveal">
         <div class="step-num" aria-hidden="true">4</div>
         <div class="step-content">
-          <h3 class="step-title">Créer un compte et installer vos jeux</h3>
+          <h3 class="step-title">Créer un compte et installer vos jeux Steam</h3>
           <p class="step-desc">
             Lancez Depovex.exe, créez un compte gratuit, et profitez de 20 crédits de bienvenue.
             Chaque installation coûte 10 crédits. Recherchez n'importe quel jeu et cliquez sur Installer !
+            <a href="#pricing" style="color:var(--accent);text-decoration:none;display:inline-block;margin-top:6px">Voir le système de crédits →</a>
           </p>
         </div>
       </li>
@@ -1111,7 +1196,7 @@ footer {
   <div class="reveal">
     <span class="section-eyebrow">// Système de crédits</span>
     <h2 class="section-title" id="pricing-title">Gratuit d'abord,<br><em>rechargeable ensuite.</em></h2>
-    <p class="section-sub">Commencez avec 20 crédits gratuits, récupérez +10 par jour, ou achetez un pack.</p>
+    <p class="section-sub">Commencez avec 20 crédits gratuits, récupérez +10 par jour, ou achetez un pack. <a href="#faq" style="color:var(--accent);text-decoration:none">Questions fréquentes →</a></p>
   </div>
 
   <div class="price-free reveal" aria-label="Offre de bienvenue gratuite">
@@ -1177,11 +1262,11 @@ footer {
 
       <div class="faq-item" role="listitem">
         <div class="faq-q" onclick="toggleFaq(this)" role="button" aria-expanded="false" tabindex="0">
-          Comment fonctionne l'installation de jeux ?
+          Comment fonctionne l'installation de jeux Steam ?
           <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
         </div>
         <div class="faq-a">
-          Depovex télécharge les fichiers manifest du jeu depuis le dépôt ManifestHub2, les copie dans les répertoires <code>depotcache</code> et <code>stplug-in</code> de Steam, puis redémarre Steam automatiquement. Steam reconnaît alors le jeu comme installé.
+          Depovex télécharge les fichiers manifest du jeu depuis le dépôt ManifestHub2, les copie dans les répertoires <code>depotcache</code> et <code>stplug-in</code> de Steam, puis redémarre Steam automatiquement. Steam reconnaît alors le jeu comme installé. <a href="#how" style="color:var(--accent)">Voir le guide complet →</a>
         </div>
       </div>
 
@@ -1201,7 +1286,7 @@ footer {
           <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
         </div>
         <div class="faq-a">
-          La commande <code>irm … | iex</code> télécharge et exécute un script PowerShell hébergé sur Vercel. Le code source est entièrement disponible sur GitHub. Vous pouvez lire le script avant exécution en naviguant sur l'URL du script dans votre navigateur.
+          La commande <code>irm … | iex</code> télécharge et exécute un script PowerShell hébergé sur Vercel. Le code source est entièrement disponible sur <a href="https://github.com/contactwebdevpro-cmyk/steamvault" target="_blank" rel="noopener noreferrer" style="color:var(--accent)">GitHub</a>. Vous pouvez lire le script avant exécution en naviguant sur l'URL du script dans votre navigateur.
         </div>
       </div>
 
@@ -1231,7 +1316,7 @@ footer {
           <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
         </div>
         <div class="faq-a">
-          Connectez-vous chaque jour à Depovex pour recevoir +10 crédits automatiquement. Avec 20 crédits de bienvenue et 10 par jour, vous pouvez installer un jeu tous les jours gratuitement.
+          Connectez-vous chaque jour à Depovex pour recevoir +10 crédits automatiquement. Avec 20 crédits de bienvenue et 10 par jour, vous pouvez installer un jeu tous les jours gratuitement. <a href="#pricing" style="color:var(--accent)">Voir tous les packs de crédits →</a>
         </div>
       </div>
 
@@ -1242,7 +1327,7 @@ footer {
 <!-- ═══ CTA ═══ -->
 <section id="cta" aria-labelledby="cta-title">
   <div class="reveal">
-    <h2 class="cta-title" id="cta-title">Prêt à <em style="font-style:normal;background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">jouer</em> ?</h2>
+    <h2 class="cta-title" id="cta-title">Prêt à <em style="font-style:normal;background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">jouer gratuitement</em> ?</h2>
     <p class="cta-sub">Installation en 30 secondes. 20 crédits offerts. Aucune carte bancaire requise pour commencer.</p>
     <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
       <button class="btn-primary" onclick="copyCmd()" aria-label="Copier la commande d'installation PowerShell">
@@ -1271,38 +1356,66 @@ footer {
   <div class="footer-note">© 2025 Depovex. Fourni à des fins éducatives.</div>
   <nav class="footer-links" aria-label="Liens du pied de page">
     <a href="https://github.com/contactwebdevpro-cmyk/steamvault" target="_blank" rel="noopener noreferrer">GitHub</a>
+    <a href="#features">Fonctionnalités</a>
+    <a href="#how">Guide d'installation</a>
     <a href="#faq">FAQ</a>
     <a href="#pricing">Crédits</a>
   </nav>
 </footer>
 
 <div id="toast" role="status" aria-live="polite">✓ Commande copiée dans le presse-papiers !</div>
+<div id="toast-link" role="status" aria-live="polite" style="position:fixed;bottom:28px;right:28px;z-index:999;background:var(--surface2);border:1px solid var(--success);border-radius:12px;padding:14px 20px;font-size:13px;color:var(--success);display:flex;align-items:center;gap:10px;transform:translateY(80px) scale(.95);opacity:0;transition:all .4s cubic-bezier(.34,1.56,.64,1);pointer-events:none;font-family:'JetBrains Mono',monospace;">✓ Lien copié !</div>
 
 <script>
 const CMD = 'irm "https://steamvault-one.vercel.app/api/install.ps1" | iex';
+const PAGE_URL = 'https://steamvault-one.vercel.app/';
 
 function copyCmd() {
   navigator.clipboard.writeText(CMD).then(() => {
     const btn = document.getElementById('copyBtn');
-    btn.classList.add('copied');
-    btn.setAttribute('aria-label', 'Commande copiée !');
-    btn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Copié !`;
-    showToast();
-    setTimeout(() => {
-      btn.classList.remove('copied');
-      btn.setAttribute('aria-label', 'Copier la commande dans le presse-papiers');
-      btn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg> Copier`;
-    }, 2500);
+    if (btn) {
+      btn.classList.add('copied');
+      btn.setAttribute('aria-label', 'Commande copiée !');
+      btn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Copié !`;
+      setTimeout(() => {
+        btn.classList.remove('copied');
+        btn.setAttribute('aria-label', 'Copier la commande dans le presse-papiers');
+        btn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg> Copier`;
+      }, 2500);
+    }
+    showToast('toast');
   });
 }
 
-let toastTimer;
-function showToast() {
-  const el = document.getElementById('toast');
-  el.classList.add('show');
-  clearTimeout(toastTimer);
-  toastTimer = setTimeout(() => el.classList.remove('show'), 3000);
+function copyPageLink() {
+  navigator.clipboard.writeText(PAGE_URL).then(() => {
+    showToast('toast-link');
+  });
 }
+
+let toastTimers = {};
+function showToast(id) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  el.style.transform = 'translateY(0) scale(1)';
+  el.style.opacity = '1';
+  clearTimeout(toastTimers[id]);
+  toastTimers[id] = setTimeout(() => {
+    el.style.transform = 'translateY(80px) scale(.95)';
+    el.style.opacity = '0';
+  }, 3000);
+}
+
+// Legacy showToast for first toast
+document.getElementById('toast').classList && (function() {
+  const orig = window.showToast;
+  window.showToastLegacy = function() {
+    const el = document.getElementById('toast');
+    el.classList.add('show');
+    clearTimeout(window._toastTimer);
+    window._toastTimer = setTimeout(() => el.classList.remove('show'), 3000);
+  };
+})();
 
 function toggleFaq(el) {
   const item = el.closest('.faq-item');
