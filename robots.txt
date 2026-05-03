@@ -1,4 +1,5 @@
 User-agent: *
+
 Allow: /
 
 # Bloquer les endpoints API si inutile pour SEO
@@ -13,4 +14,4 @@ Allow: /*.svg$
 Allow: /*.webp$
 
 # Sitemap
-Sitemap: https://steamvault-one.vercel.app/sitemap.xml
+Sitemap: https://depovex.vercel.app/sitemap.xml
